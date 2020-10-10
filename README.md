@@ -22,7 +22,7 @@ Logging temperature and humidity data to cloud (ex: AWS) using ESP8266 Nodemcu a
 * Nodemcu is not detected by default in Arduino IDE. Therefore, you must install Additional Board Manager Url(http://arduino.esp8266.com/stable/package_esp8266com_index.json).     <br>
   Go to File >> Preferences.  Paste the link provided above in "Additional Board Manager Urls".<br>
   Then go to Tools >> Board >> Board Manager. Search for esp8266 library and install it. <br>
-  Then select NodeMCU 1.0(ESP-12 Module) in Tools >> Board with Port.
+  Then select NodeMCU 1.0(ESP-12 Module) in Tools >> Board with respective Port.
   
 ### Connections:
   * Data pin of DHT11 to D2(GPIO) of NodeMCU.<br>
