@@ -3,18 +3,32 @@ Logging temperature and humidity data to cloud (ex: AWS) using ESP8266 Nodemcu a
 
 
 ### Components required:
-  1. ESP8266 NODEMCU
+  * ESP8266 NODEMCU
   
-  2. DHT11/DHT22 Temperature and Humidity Sensor
+  * DHT11/DHT22 Temperature and Humidity Sensor
   
-  3. Breadboard(if required)
+  * Breadboard(if required)
   
-  4. Connecting wires or jumper wires
+  * Connecting wires or jumper wires
 
 ### Pre-requisites:
- 1. Arduino IDE [get it here](https://arduino.en.softonic.com/)
+ * Arduino IDE [get it here](https://arduino.en.softonic.com/)
  
- 2. You need to manually add DHT library to Arduino IDE as it is not included by default. You can ignore it if you have already included it. Otherwise you can do it following the     steps below.<br>
+ * You need to manually add DHT library to Arduino IDE as it is not included by default. You can ignore it if you have already included it. Otherwise you can do it following the     steps below.<br>
       a).Open Arduino IDE <br>
       b).Go to Sketch >> Include Library >> Manage Libraries <br>
       c).Search for DHT sensor library and install it
+
+* Nodemcu is not detected by default in Arduino IDE. Therefore, you must install Additional Board Manager Url(http://arduino.esp8266.com/stable/package_esp8266com_index.json).     <br>
+  Go to File >> Preferences.  Paste the link provided above in "Additional Board Manager Urls".<br>
+  Then go to Tools >> Board >> Board Manager. Search for esp8266 library and install it. <br>
+  Then select NodeMCU 1.0(ESP-12 Module) in Tools >> Board with Port.
+  
+### Connections:
+  * Data pin of DHT11 to D2(GPIO) of NodeMCU.<br>
+  
+  * VCC of DHT11 to 3V supply of NodeMCU
+  
+  * Ground of DHT11 to ground of NodeMCU
+  
+  
